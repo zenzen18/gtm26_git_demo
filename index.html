@@ -62,7 +62,11 @@ function setup() {
 function draw() {
 	noStroke
 	circle(random(width), random(height), random(0.1, 4))
-	
+
+	if(mouseIsPressed){
+		circle(mouseX, mouseY, random(100))
+
+	}
 }
 </script>
 
